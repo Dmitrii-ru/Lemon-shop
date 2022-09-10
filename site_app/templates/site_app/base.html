@@ -1,0 +1,51 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/site_app/css/site_app.css">
+  <link rel="stylesheet" href='{% static "site_app/css/site_app.css"%}'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/146277fa72.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <title>Lemon shop </title>
+</head>
+<header class="">
+  <div class="header_logo ">
+    <span class="first_logo">L</span><span class="logo">eman</span><span >shop</span>
+  </div>
+  <div class="nav">
+    <a class="nav_items" href='{%url "index"%}'>О Нас</a>
+    <a class="nav_items" href='{%url "catalog"%}'>Каталог</a>
+    <a class="nav_items" href='{%url "contacts"%}'>Контакты</a>
+  </div>
+  <span class="button_menu_header" id='show_menu'>
+    <i class="fa-solid fa-bars"></i>
+  </span>
+</header>
+<body>
+{% block content %}
+
+
+{% endblock %}
+</body>
+<footer >
+  <div class="up-btn">
+    <i class="fa-sharp fa-solid fa-up">U P</i>
+  </div>
+  <p>Все правы &copy;</p>
+  <div class="social">
+    <div class="social-item_footer">
+      <i class="fa-regular fa-users"></i>
+    </div>
+    <div class="social-item_footer">
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </div>
+</footer>
+</html>

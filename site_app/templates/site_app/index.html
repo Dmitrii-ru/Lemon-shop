@@ -1,0 +1,35 @@
+{% extends 'site_app/base.html' %}
+
+{% block content %}
+<body>
+      <section class="full-page user_select">
+      <h1>Lemon shop</h1>
+      <h5>Постовлем свежие лимоны со всей галактики</h5>
+      <h2>Лимоны — яркие представители цитрусовых. Их ярко-желтый цвет и аромат знают как взрослые, так и дети. Но покупая этот полезный продукт, не многие задумываются об его происхождении. Узнать, лимон — это фрукт или овощ, поможет тип роста и формирования плодов.</h2>
+      <h3>Жми лимон</h3>
+      <a href='{%url "catalog"%}'> <img  class="lemon_body"src="https://e7.pngegg.com/pngimages/319/341/png-clipart-lemon-lemon.png" alt=""> </a>
+    </section>
+    <section class="features">
+      <div class="features_items">
+        <img src="https://ath2.unileverservices.com/wp-content/uploads/sites/7/2020/03/noah-buscher-eCJiD00AJqs-unsplash-782x439.jpg" alt="">
+        <p>Очищает организм от токсинов и шлаков</p>
+      </div>
+      <div class="features_items">
+        <img src="https://zira.uz/wp-content/uploads/2017/11/mg_3748.jpg" alt="">
+        <p>Бодрит, снимает сонливость и усталость</p>
+      </div>
+      <div class="features_items">
+        <img src="https://doctorbormental.ru/upload/iblock/df6/df66895feaa8e5b8c9f3bfc7015d2aae.jpg" alt="">
+        <p>Лимонад, летом, холодненький</p>
+      </div>
+    </section>
+
+    <section class="bg-fixed">
+      <div class="btn-input">
+      <h3>Подпишись на лимные новости</h3>
+      <input class="input_mail" type="email" placeholder="Ваша почта" name="" value="">
+      <button class="btn btn-warning " type="submit" name="button">Подпишись  </button>
+      </div>
+    </section>
+</body>
+{% endblock content %}
