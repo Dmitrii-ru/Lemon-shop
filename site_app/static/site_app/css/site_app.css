@@ -311,3 +311,6 @@ padding-top: 15px;
   width: 100%;
   background: yellow;
 }
+.detail_product{
+  min-height: 780px;
+}
