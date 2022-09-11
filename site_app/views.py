@@ -13,7 +13,7 @@ class CatalogLemon(ListView):
 
 def detail_pro(request, slug):
     product = get_object_or_404(Category, slug=slug)
-    # product = Category.objects.all(slug=slug)
+
     context = {'product': product}
     return render(request, 'site_app/detail_pro.html', context=context)
 
