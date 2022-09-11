@@ -1,17 +1,18 @@
 {% extends 'site_app/base.html' %}
 
 {% block content %}
-
-
+{{Category.price}}
     <div class="menu_product ">
+
       <div class="row row_product">
           {%for cat in Category%}
-        <div class="col-3 product_card">
-          <a href="#">
-          <img src="cat.img" alt="">
-          <h1>{{cat.title}}</h1>
-          </a>
-        </div>
+
+            <div class="col-3 product_card">
+                <a href="{{cat.get_absolute_url}}">
+                <img src="{{cat.img.url}}" alt="Фото">
+                <h1>{{cat.title}}</h1>
+                </a>
+            </div>
           {%endfor%}
       </div>
     </div>

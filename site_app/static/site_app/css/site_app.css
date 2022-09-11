@@ -74,7 +74,6 @@ img {
 
 .full-page,
 .bg-fixed,
-.menu_product,
 .contects {
   height: 85vh;
   background: url('https://flo.discus-club.ru/images/stories/komnatnie/kak-virastit-limon/kak-virastit-limon2.jpg') no-repeat center center;
@@ -87,6 +86,22 @@ img {
   border-bottom: 3px solid yellow;
   border-top: 3px solid yellow;
 }
+
+.menu_product{
+  height:100%;
+  background: url('https://flo.discus-club.ru/images/stories/komnatnie/kak-virastit-limon/kak-virastit-limon2.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #3b3b3b;
+  text-align: center;
+  color:#EC9704;
+  border-bottom: 3px solid yellow;
+  border-top: 3px solid yellow;
+}
+
+
+
 
 .full-page h1 {
   padding-top: 20px;
@@ -271,6 +286,8 @@ padding-top: 15px;
 .textcols-right {
 	margin-left: 45%;
   padding: 19px;
+
+
 
 }
 .detail_product img{
