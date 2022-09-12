@@ -27,8 +27,16 @@
   <span class="button_menu_header" id='show_menu'>
     <i class="fa-solid fa-bars"></i>
   </span>
+  <a href="{%url 'reg'%}">
+    <button class="btn btn-outline-warning">Регистрация</button>
+  </a>
 </header>
 <body>
+{%if messages %}
+  {%for mess in messages%}
+    <div class="alert alert-success">{{ mess }}</div>
+  {%endfor%}
+{%endif%}
 {% block content %}
 
 
