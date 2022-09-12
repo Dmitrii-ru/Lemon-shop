@@ -27,12 +27,22 @@
 <!--  <span class="button_menu_header" id='show_menu'>-->
 <!--    <i class="fa-solid fa-bars"></i>-->
 <!--  </span>-->
+  {%if not user.is_authenticated%}
   <a href="{%url 'reg'%}">
     <button class="btn btn-outline-warning">Регистрация</button>
   </a>
     <a href="{%url 'user'%}">
     <button class="btn btn-outline-warning ">Войти</button>
   </a>
+  {%else%}
+    <a href="{%url 'profile'%}">
+    <button class="btn btn-outline-warning">Профиль</button>
+  </a>
+    <a href="{%url 'exit'%}">
+    <button class="btn btn-outline-warning ">Выйти</button>
+  </a>
+  {%endif%}
+
 </header>
 <body>
 {%if messages %}
