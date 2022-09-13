@@ -44,13 +44,15 @@
   {%endif%}
 
 </header>
-<body>
 {%if messages %}
   {%for mess in messages%}
-    <div class="alert alert-success">{{ mess }}</div>
+    <div class="alert alert-success bord_top mt-3">{{ mess }}</div>
   {%endfor%}
 {%endif%}
+<body>
+
 {% block content %}
+
 
 
 {% endblock %}
