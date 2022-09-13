@@ -341,13 +341,17 @@ padding-top: 15px;
  height:50%;
 }
 
-.form_reg.auth input{
+.form_reg.auth input {
  display:block;
  weight:100%;
  height:50%;
 }
 
 
-.bord_top{
+.bord_top {
   text-align: center;
+}
+
+.sex_choice {
+  border: 2px solid yellow;
 }

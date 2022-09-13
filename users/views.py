@@ -23,9 +23,11 @@ def profile(request):
     if request.method == "POST":
         profileForm = ProfileImageForm(request.POST,request.FILES, instance=request.user.profile)
         updateUserForm = UserUpdateForm(request.POST,instance=request.user)
+
         if profileForm.is_valid() and updateUserForm.is_valid():
             profileForm.save()
             updateUserForm.save()
+
             messages.success(request, f'Успешно обновлено')
             return redirect('profile')
 
